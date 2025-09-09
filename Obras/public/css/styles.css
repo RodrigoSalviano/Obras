@@ -1,0 +1,21 @@
+:root {
+  --primary: #3c2bff;
+  --primary-dark: #2a1fd7;
+}
+body{ background:#f6f6f8; }
+.navbar-brand img{ height:28px; margin-right:8px; }
+.hero {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+}
+.card-rounded{ border-radius:16px; }
+.btn-primary{
+  background:var(--primary);
+  border-color:var(--primary);
+}
+.btn-primary:hover{ background:var(--primary-dark); border-color:var(--primary-dark); }
+.table thead th{ background:#3d2bff; color:#fff; border:0; }
+.badge-soft{ background:#eef0ff; color:#2b2b8a; }
+.footer-mini{ font-size:.85rem; color:#666; }

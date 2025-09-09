@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secretaria de Obras</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<nav class="navbar navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-semibold d-flex align-items-center" href="/">
+      <img src="https://dummyimage.com/40x40/ddd/000.png&text=🏛️" alt="">
+      Obras Paraguaçu
+    </a>
+    <div class="d-flex gap-2">
+      <a href="/chamados/novo" class="btn btn-primary btn-sm">Abrir Chamado</a>
+      <a href="/estoque" class="btn btn-outline-secondary btn-sm">Estoque</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+  <div class="hero text-center mx-auto col-lg-10">
+    <h3 class="fw-bold mb-1">Secretaria de Obras e Serviços Urbanos</h3>
+    <p class="text-muted mb-4">Prefeitura Municipal da Estância Turística de Paraguaçu Paulista</p>
+
+    <div class="d-flex justify-content-center gap-4 mb-3">
+      <span class="badge badge-soft rounded-pill px-3 py-2">🛠️ Obras em andamento</span>
+      <span class="badge badge-soft rounded-pill px-3 py-2">✉️ obras@paraguacu.gov.br</span>
+      <span class="badge badge-soft rounded-pill px-3 py-2">☎️ (18) 3361-9685</span>
+    </div>
+
+    <a class="btn btn-primary btn-lg px-4" href="/chamados/novo">Abrir Chamado de Ocorrência</a>
+
+    <div class="mt-5">
+      <h5 class="fw-semibold">Trabalhos Realizados</h5>
+      <p class="text-muted">Confira as últimas obras concluídas pela nossa equipe.</p>
+    </div>
+  </div>
+
+  <p class="text-center mt-5 footer-mini">Secretaria de Obras - Paraguaçu Paulista © <span id="y"></span></p>
+</main>
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
